@@ -105,7 +105,7 @@ def PolynomialRegressionModelWithDegree(x_train, y_train, x_test, y_test, degree
     poly_features = PolynomialFeatures(degree = degree, include_bias = False)
     
     x_new = np.linspace(-3, 3, 100).reshape(100, 1)
-    x_new_poly = poly_features.fit_transform(x_new)
+    
     
     std_scaler = StandardScaler()
     lin_reg = LinearRegression()
